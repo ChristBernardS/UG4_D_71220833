@@ -1,5 +1,7 @@
 a = input('Masukkan sekumpulan bilangan (pisahkan dengan koma): ').split(', ')
-e = max(a, key = lambda x : int(x))
-f = min(a, key = lambda x : int(x))
-print(f"Bilangan terbesar dari kumpulan bilangan yang di input adalah {e}")
-print(f"Bilangan terkecil dari kumpulan bilangan yang di input adalah {f}")
+for i in range(len(a)):
+    a[i] = int(a[i])
+b = lambda x : max(a)
+c = lambda x : min(a)
+print(f"Bilangan terbesar dari kumpulan bilangan yang di input adalah {b(a)}")
+print(f"Bilangan terkecil dari kumpulan bilangan yang di input adalah {c(a)}")

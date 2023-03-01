@@ -10,5 +10,5 @@ def nyari_panjang_kata(x):
             e = i
     return x[e-1]
 
-a = input('Masukkan sebuah kalimat: ').split(' ')
-print(f"Kata terpanjang dalam kalimat tersebut adalah: {nyari_panjang_kata(a)}")
+kalimat_input_disini = input('Masukkan sebuah kalimat: ').split(' ')
+print(f"Kata terpanjang dalam kalimat tersebut adalah: {nyari_panjang_kata(kalimat_input_disini)}")

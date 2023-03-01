@@ -1,3 +1,4 @@
-a = int(input('Masukkan sebuah angka: '))
-b = lambda x : x**2
-print(f"Hasil kuadrat dari angka {a} adalah: {b(a)}")
+angka = int(input('Masukkan sebuah angka: '))
+def kuadrat(x):
+    return lambda x : x**2
+print(f"Hasil kuadrat dari angka {angka} adalah: {kuadrat(0)(angka)}")

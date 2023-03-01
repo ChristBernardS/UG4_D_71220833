@@ -1,4 +1,4 @@
-a = input('Masukkan sekumpulan bilangan (pisahkan dengan koma): ').split(', ')
+a = input('Masukkan sekumpulan bilangan (pisahkan dengan koma): ').split(',')
 for i in range(len(a)):
     a[i] = int(a[i])
 b = lambda x : max(a)
